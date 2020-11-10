@@ -23,9 +23,7 @@ namespace Exercicio01
 
             Console.Write("Status: PendingPayment [0] / Processing [1] / Shipped [2] / Delivered [3] ): ");
 
-            int numStatus = int.Parse(Console.ReadLine());
-
-            OrderStatus status = (OrderStatus)numStatus;
+            OrderStatus status = (OrderStatus)int.Parse(Console.ReadLine());
 
             Console.Write("How many items to this order? ");
             int numItems = int.Parse(Console.ReadLine());
