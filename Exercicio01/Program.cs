@@ -22,7 +22,10 @@ namespace Exercicio01
             Console.WriteLine("Enter order data:");
 
             Console.Write("Status: PendingPayment [0] / Processing [1] / Shipped [2] / Delivered [3] ): ");
-            OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
+
+            int numStatus = int.Parse(Console.ReadLine());
+
+            OrderStatus status = (OrderStatus)numStatus;
 
             Console.Write("How many items to this order? ");
             int numItems = int.Parse(Console.ReadLine());
